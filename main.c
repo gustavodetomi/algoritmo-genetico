@@ -204,7 +204,7 @@ gboolean desenha(GtkWidget *w, GdkEventExpose *e, gpointer p) {
     if(percursoAchado){
       for(i=0;i<nCidades-1;i++){
         cr = gdk_cairo_create(gtk_widget_get_window(w));
-        cairo_set_source_rgb(cr,199,21,133);
+        cairo_set_source_rgb(cr,0,89,0);
         cairo_set_line_width(cr, 2);
         cairo_move_to(cr, cidades[dados[nGeracaoFinal-1].percurso[i]].x*tamanhoDesenhoX+30,
                           cidades[dados[nGeracaoFinal-1].percurso[i]].y*tamanhoDesenhoY+30);
@@ -213,7 +213,7 @@ gboolean desenha(GtkWidget *w, GdkEventExpose *e, gpointer p) {
         cairo_stroke(cr);
       }
       cr = gdk_cairo_create(gtk_widget_get_window(w));
-      cairo_set_source_rgb(cr, 199,21,133);
+      cairo_set_source_rgb(cr, 0,89,0);
       cairo_set_line_width(cr, 2);
       cairo_move_to(cr, cidades[dados[nGeracaoFinal-1].percurso[i]].x*tamanhoDesenhoX+30,
                         cidades[dados[nGeracaoFinal-1].percurso[i]].y*tamanhoDesenhoY+30);
@@ -224,7 +224,7 @@ gboolean desenha(GtkWidget *w, GdkEventExpose *e, gpointer p) {
     // Desenha a Coluna do eixo Y
     for(i=maior;i>=0;i--){
       texto = gdk_cairo_create(gtk_widget_get_window(w));
-      cairo_set_source_rgb(texto, 50.1, 50.1, 50.1);
+      cairo_set_source_rgb(texto, 0, 0, 0);
       cairo_select_font_face(texto, "Times",CAIRO_FONT_SLANT_NORMAL,CAIRO_FONT_WEIGHT_BOLD);
       cairo_set_font_size(texto, 14);
       cairo_move_to(texto, 10, i*tamanhoDesenhoY+30);
@@ -234,7 +234,7 @@ gboolean desenha(GtkWidget *w, GdkEventExpose *e, gpointer p) {
     // Desenha a Coluna do eixo X
     for(i=maior;i>=0;i--){
       texto = gdk_cairo_create(gtk_widget_get_window(w));
-      cairo_set_source_rgb(texto, 50.1, 50.1, 50.1);
+      cairo_set_source_rgb(texto, 0, 0, 0);
       cairo_select_font_face(texto, "Times",CAIRO_FONT_SLANT_NORMAL,CAIRO_FONT_WEIGHT_BOLD);
       cairo_set_font_size(texto, 14);
       cairo_move_to(texto, i*tamanhoDesenhoX+30, 10);
@@ -244,7 +244,7 @@ gboolean desenha(GtkWidget *w, GdkEventExpose *e, gpointer p) {
     // Insere as 'cidades' no mapa
     for(i=0;i<nCidades;i++){
       texto = gdk_cairo_create(gtk_widget_get_window(w));
-      cairo_set_source_rgb(texto, 0.1, 0.1, 0.1);
+      cairo_set_source_rgb(texto, 0, 0, 0);
       cairo_select_font_face(texto, "Times",CAIRO_FONT_SLANT_NORMAL,CAIRO_FONT_WEIGHT_BOLD);
       cairo_set_font_size(texto, 14);
       cairo_move_to(texto, cidades[i].x*tamanhoDesenhoX+30, cidades[i].y*tamanhoDesenhoY+30);
