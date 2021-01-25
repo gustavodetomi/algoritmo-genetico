@@ -1,7 +1,4 @@
 #include "header.h"
-#include "auxiliares.h"
-#include "calculaDistancia.h"
-#include "algoritmoGenetico.h"
 
 // Variáveis globais da interface
 GtkWidget *entradaCaminhos;

@@ -1,5 +1,4 @@
-#include "algoritmoGenetico.h"
-#include "calculaDistancia.h"
+#include "header.h"
 
 // Inicializa as estatisticas
 void inicializarEstatistica(estatistica *dado, int tamanho){

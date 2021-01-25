@@ -1,4 +1,4 @@
-#include "auxiliares.h"
+#include "header.h"
 
 // Vetor de inteiro para char
 void intToChar(char *c,int *cidades,int nCidades){
@@ -8,7 +8,7 @@ void intToChar(char *c,int *cidades,int nCidades){
 	int casaDezena=0;
 	int casaUnitaria=0;
 	int i,indice=0;
-	int n[nCidades];
+	int n[numeroMaximoCidades];
 	for(i=0;i<nCidades;i++){
 		n[i] = cidades[i];
 	}
