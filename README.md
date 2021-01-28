@@ -3,5 +3,5 @@
 - Linguagem C
 - Interface me GTK
 # Executar o projeto
-- Instalar as depências GCC e GTK
+- Instalar as dependências GCC e GTK
 - E executar o "make"
